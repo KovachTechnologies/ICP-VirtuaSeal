@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "virtuaSeal_backend": {
+      "main": "src/virtuaSeal_backend/main.mo",
+      "type": "motoko"
+    },
+    "virtuaSeal_frontend": {
+      "dependencies": [
+        "virtuaSeal_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/virtuaSeal_frontend/src/index.html"
+      },
+      "source": [
+        "src/virtuaSeal_frontend/assets",
+        "dist/virtuaSeal_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
