@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "NonDisclosureAgreement_backend": {
+      "main": "src/NonDisclosureAgreement_backend/main.mo",
+      "type": "motoko"
+    },
+    "NonDisclosureAgreement_frontend": {
+      "dependencies": [
+        "NonDisclosureAgreement_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/NonDisclosureAgreement_frontend/src/index.js"
+      },
+      "source": [
+        "src/NonDisclosureAgreement_frontend/assets",
+        "dist/NonDisclosureAgreement_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

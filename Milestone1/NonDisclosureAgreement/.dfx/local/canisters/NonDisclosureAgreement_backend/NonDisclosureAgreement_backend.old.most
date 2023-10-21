@@ -1,0 +1,14 @@
+// Version: 1.0.0
+actor {
+  stable var document_hash : Text;
+  stable var receiver_address : Text;
+  stable var receiver_company : Text;
+  stable var receiver_date : Text;
+  stable var receiver_name : Text;
+  stable var receiver_title : Text;
+  stable var sender_address : Text;
+  stable var sender_company : Text;
+  stable var sender_date : Text;
+  stable var sender_name : Text;
+  stable var sender_title : Text
+};

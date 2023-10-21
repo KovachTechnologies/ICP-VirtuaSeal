@@ -1,0 +1,27 @@
+type Hash = nat32;
+service : {
+  get_document_hash: () -> (text) query;
+  get_receiver_address: () -> (text) query;
+  get_receiver_company: () -> (text) query;
+  get_receiver_date: () -> (text) query;
+  get_receiver_name: () -> (text) query;
+  get_receiver_title: () -> (text) query;
+  get_sender_address: () -> (text) query;
+  get_sender_company: () -> (text) query;
+  get_sender_date: () -> (text) query;
+  get_sender_name: () -> (text) query;
+  get_sender_title: () -> (text) query;
+  greet: (text) -> (text) query;
+  return_hash: (text) -> (Hash) query;
+  set_document_hash: (text) -> () oneway;
+  set_receiver_address: (text) -> () oneway;
+  set_receiver_company: (text) -> () oneway;
+  set_receiver_date: (text) -> () oneway;
+  set_receiver_name: (text) -> () oneway;
+  set_receiver_title: (text) -> () oneway;
+  set_sender_address: (text) -> () oneway;
+  set_sender_company: (text) -> () oneway;
+  set_sender_date: (text) -> () oneway;
+  set_sender_name: (text) -> () oneway;
+  set_sender_title: (text) -> () oneway;
+}
