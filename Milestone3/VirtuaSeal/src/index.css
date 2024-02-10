@@ -1,0 +1,424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Preflight */
+  h1 {
+    @apply text-3xl font-semibold text-primary;
+  }
+  h2 {
+    @apply text-lg font-semibold text-primary;
+  }
+  h3 {
+    @apply text-sm font-semibold text-secondary;
+  }
+  p {
+    @apply text-sm font-normal text-tertiary;
+  }
+}
+
+@layer components {
+  /* .button-primary-fg { @apply text-white dark:text-white }
+   .button-primary-fg_hover { @apply text-white dark:text-white }
+   .button-primary-bg { @apply bg-brand-600 dark:bg-brand-600 }
+   .button-primary-bg_hover { @apply bg-brand-700 dark:bg-brand-700 }
+   .button-primary-border { @apply border-brand-600 dark:border-brand-600 }
+   .button-primary-border_hover { @apply border-brand-700 dark:border-brand-700 }
+
+   .button-secondary-fg { @apply text-gray-700 dark:text-gray-300 }
+   .button-secondary-fg_hover { @apply text-gray-800 dark:text-gray-100 }
+   .button-secondary-bg { @apply bg-white dark:bg-gray-900 }
+   .button-secondary-bg_hover { @apply bg-gray-50 dark:bg-gray-800 }
+   .button-secondary-border { @apply bg-gray-300 dark:bg-gray-700 }
+   .button-secondary-border_hover { @apply bg-gray-300 dark:bg-gray-700 } */
+  .avatar-bg {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+  .avatar-profile-photo-border {
+    @apply border-white dark:border-gray-950;
+  }
+  .avatar-contrast-border {
+    @apply border-black/5 dark:border-white/10;
+  }
+  .avatar-focus-border {
+    @apply border-gray-400 dark:border-gray-400;
+  }
+
+  .featured-icon-modern-border {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+
+  .nav-item-button-icon-fg {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  .nav-item-button-icon-fg_active {
+    @apply text-gray-700 dark:text-gray-200;
+  }
+  .nav-item-icon-fg {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  .nav-item-icon-fg_active {
+    @apply text-gray-500 dark:text-gray-200;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-gray-900 dark:text-gray-50;
+  }
+  .text-primary_on-brand {
+    @apply text-white dark:text-gray-50;
+  }
+
+  .text-secondary {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  .text-secondary_hover {
+    @apply text-gray-800 dark:text-gray-200;
+  }
+  .text-secondary_on-brand {
+    @apply text-brand-200 dark:text-gray-300;
+  }
+
+  .text-tertiary {
+    @apply text-gray-600 dark:text-gray-400;
+  }
+  .text-tertiary_hover {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  .text-tertiary_on-brand {
+    @apply text-brand-200 dark:text-gray-400;
+  }
+
+  .text-quarterary {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  .text-quarterary_on-brand {
+    @apply text-brand-300 dark:text-gray-400;
+  }
+
+  .text-disabled {
+    @apply text-gray-500 dark:text-gray-500;
+  }
+
+  .text-placeholder {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  .text-placeholder_subtle {
+    @apply text-gray-300 dark:text-gray-700;
+  }
+
+  .text-brand-primary {
+    @apply text-brand-900 dark:text-gray-50;
+  }
+  .text-brand-secondary {
+    @apply text-brand-700 dark:text-gray-300;
+  }
+  .text-brand-tertiary {
+    @apply text-brand-600 dark:text-gray-400;
+  }
+  .text-brand-tertiary_alt {
+    @apply text-brand-600 dark:text-gray-50;
+  }
+
+  .text-error-primary {
+    @apply text-error-600 dark:text-error-400;
+  }
+  .text-warning-primary {
+    @apply text-warning-600 dark:text-warning-400;
+  }
+  .text-success-primary {
+    @apply text-success-600 dark:text-success-400;
+  }
+
+  /* Borders */
+  .border-primary {
+    @apply border-gray-300 dark:border-gray-700;
+  }
+  .border-secondary {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+  .border-tertiary {
+    @apply border-gray-100 dark:border-gray-800;
+  }
+
+  .border-disabled {
+    @apply border-gray-300 dark:border-gray-700;
+  }
+  .border-disabled_subtle {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+
+  .border-brand {
+    @apply border-brand-300 dark:border-brand-400;
+  }
+  .border-brand-solid {
+    @apply border-brand-600 dark:border-brand-500;
+  }
+  .border-brand-solid_alt {
+    @apply border-brand-600 dark:border-gray-700;
+  }
+
+  .border-error {
+    @apply border-error-300 dark:border-error-400;
+  }
+  .border-error-solid {
+    @apply border-error-600 dark:border-error-500;
+  }
+
+  /* Rings */
+  .ring-primary {
+    @apply ring-gray-300 dark:ring-gray-700;
+  }
+  .ring-secondary {
+    @apply ring-gray-200 dark:ring-gray-800;
+  }
+  .ring-tertiary {
+    @apply ring-gray-100 dark:ring-gray-800;
+  }
+
+  .ring-disabled {
+    @apply ring-gray-300 dark:ring-gray-700;
+  }
+  .ring-disabled_subtle {
+    @apply ring-gray-200 dark:ring-gray-800;
+  }
+
+  .ring-brand {
+    @apply ring-brand-300 dark:ring-brand-400;
+  }
+  .ring-brand-solid {
+    @apply ring-brand-600 dark:ring-brand-500;
+  }
+  .ring-brand-solid_alt {
+    @apply ring-brand-600 dark:ring-gray-700;
+  }
+
+  .ring-error {
+    @apply ring-error-300 dark:ring-error-400;
+  }
+  .ring-error-solid {
+    @apply ring-error-600 dark:ring-error-500;
+  }
+
+  /* Dividers */
+  .divide-primary {
+    @apply divide-gray-300 dark:divide-gray-700;
+  }
+  .divide-secondary {
+    @apply divide-gray-200 dark:divide-gray-800;
+  }
+  .divide-tertiary {
+    @apply divide-gray-100 dark:divide-gray-800;
+  }
+
+  .divide-disabled {
+    @apply divide-gray-300 dark:divide-gray-700;
+  }
+  .divide-disabled_subtle {
+    @apply divide-gray-200 dark:divide-gray-800;
+  }
+
+  .divide-brand {
+    @apply divide-brand-300 dark:divide-brand-400;
+  }
+  .divide-brand-solid {
+    @apply divide-brand-600 dark:divide-brand-500;
+  }
+  .divide-brand-solid_alt {
+    @apply divide-brand-600 dark:divide-gray-700;
+  }
+
+  .divide-error {
+    @apply divide-error-300 dark:divide-error-400;
+  }
+  .divide-error-solid {
+    @apply divide-error-600 dark:divide-error-500;
+  }
+
+  /* Foreground colors */
+  .fg-primary {
+    @apply text-gray-900 dark:text-white;
+  }
+
+  .fg-secondary {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  .fg-secondary_hover {
+    @apply text-gray-800 dark:text-gray-200;
+  }
+
+  .fg-tertiary {
+    @apply text-gray-600 dark:text-gray-400;
+  }
+  .fg-tertiary_hover {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+
+  .fg-quarterary {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  .fg-quarterary_hover {
+    @apply text-gray-600 dark:text-gray-300;
+  }
+
+  .fg-quinary {
+    @apply text-gray-400 dark:text-gray-500;
+  }
+  .fg-quinary_hover {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  .fg-senary {
+    @apply text-gray-300 dark:text-gray-600;
+  }
+
+  .fg-white {
+    @apply text-white dark:text-white;
+  }
+
+  .fg-disabled {
+    @apply text-gray-400 dark:text-gray-500;
+  }
+  .fg-disabled_subtle {
+    @apply text-gray-300 dark:text-gray-600;
+  }
+
+  .fg-brand-primary {
+    @apply text-brand-600 dark:text-brand-500;
+  }
+  .fg-brand-primary_alt {
+    @apply text-brand-600 dark:text-gray-300;
+  }
+
+  .fg-brand-secondary {
+    @apply text-brand-500 dark:text-brand-500;
+  }
+
+  .fg-error-primary {
+    @apply text-error-600 dark:text-error-500;
+  }
+  .fg-error-secondary {
+    @apply text-error-500 dark:text-error-400;
+  }
+
+  .fg-warning-primary {
+    @apply text-warning-600 dark:text-warning-500;
+  }
+  .fg-warning-secondary {
+    @apply text-warning-500 dark:text-warning-400;
+  }
+
+  .fg-success-primary {
+    @apply text-success-600 dark:text-success-500;
+  }
+  .fg-success-secondary {
+    @apply text-success-500 dark:text-success-400;
+  }
+
+  /* Background colors */
+  .bg-primary {
+    @apply bg-white dark:bg-gray-950;
+  }
+  .bg-primary_alt {
+    @apply bg-white dark:bg-gray-900;
+  }
+  .bg-primary_hover {
+    @apply bg-gray-50 dark:bg-gray-800;
+  }
+  .bg-primary-solid {
+    @apply bg-gray-950 dark:bg-gray-900;
+  }
+
+  .bg-secondary {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+  .bg-secondary_alt {
+    @apply bg-gray-50 dark:bg-gray-950;
+  }
+  .bg-secondary_hover {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+  .bg-secondary_subtle {
+    @apply bg-gray-25 dark:bg-gray-900;
+  }
+  .bg-secondary-solid {
+    @apply bg-gray-600 dark:bg-gray-600;
+  }
+
+  .bg-tertiary {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+
+  .bg-quarterary {
+    @apply bg-gray-200 dark:bg-gray-700;
+  }
+
+  .bg-active {
+    @apply bg-gray-50 dark:bg-gray-800;
+  }
+
+  .bg-disabled {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+  .bg-disabled_subtle {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+
+  .bg-overlay {
+    @apply bg-gray-950 dark:bg-gray-800;
+  }
+
+  .bg-brand-primary {
+    @apply bg-brand-50 dark:bg-brand-500;
+  }
+  .bg-brand-primary_alt {
+    @apply bg-brand-50 dark:bg-gray-800;
+  }
+  .bg-brand-secondary {
+    @apply bg-brand-100 dark:bg-brand-600;
+  }
+  .bg-brand-solid {
+    @apply bg-brand-600 dark:bg-brand-600;
+  }
+  .bg-brand-solid_hover {
+    @apply bg-brand-700 dark:bg-brand-500;
+  }
+  .bg-brand-section {
+    @apply bg-brand-800 dark:bg-gray-800;
+  }
+  .bg-brand-section_subtle {
+    @apply bg-brand-700 dark:bg-gray-950;
+  }
+
+  .bg-error-primary {
+    @apply bg-error-50 dark:bg-error-500;
+  }
+  .bg-error-secondary {
+    @apply bg-error-100 dark:bg-error-600;
+  }
+  .bg-error-solid {
+    @apply bg-error-600 dark:bg-error-600;
+  }
+
+  .bg-warning-primary {
+    @apply bg-warning-50 dark:bg-warning-500;
+  }
+  .bg-warning-secondary {
+    @apply bg-warning-100 dark:bg-warning-600;
+  }
+  .bg-warning-solid {
+    @apply bg-warning-600 dark:bg-warning-600;
+  }
+
+  .bg-success-primary {
+    @apply bg-success-50 dark:bg-success-500;
+  }
+  .bg-success-secondary {
+    @apply bg-success-100 dark:bg-success-600;
+  }
+  .bg-success-solid {
+    @apply bg-success-600 dark:bg-success-600;
+  }
+}
